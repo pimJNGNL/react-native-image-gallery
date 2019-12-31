@@ -97,6 +97,11 @@ export default class ViewPager extends PureComponent {
         });
     }
 
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.initialPage !== this.props.initialPage) {
+        }
+    }
+
     componentDidMount () {
         // FlatList is set to render at initialPage.
         // The scroller we use is not aware of this.
